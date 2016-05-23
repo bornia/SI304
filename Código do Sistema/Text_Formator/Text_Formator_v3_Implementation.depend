@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1460725743 source:c:\users\guilherme\desktop\graduação\2016\3º semestre\engenharia de software ll - pedro ivo garcia nunes si304 b\atividades\02 - atividade prática\0. código\text_formator_v3_implementation\implementation.c
+	"source.h"
+
+1460725757 c:\users\guilherme\desktop\graduação\2016\3º semestre\engenharia de software ll - pedro ivo garcia nunes si304 b\atividades\02 - atividade prática\0. código\text_formator_v3_implementation\source.h
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+
+1460728388 source:c:\users\guilherme\desktop\graduação\2016\3º semestre\engenharia de software ll - pedro ivo garcia nunes si304 b\atividades\02 - atividade prática\0. código\text_formator_v3_implementation\main.c
+	"source.h"
+

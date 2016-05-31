@@ -11,7 +11,7 @@
 // **| MAIN |**
 int main ()
 {   // It is going to keep the name of my user;
-	char name[600]; // 600 characters divided by 6 characters (one word on average) allows the user to digit 100 words approximately
+	char name[500]; // 600 characters divided by 6 characters (one word on average) allows the user to digit 100 words approximately
 	int opcao = 0, opcao1 = 0, opcao2 = 0,  // will be filled by the user
         aux = 0, aux1 = 0, aux2 = 0;    // used to control the menus
 
@@ -34,7 +34,7 @@ int main ()
         fflush(stdin);
         system("Clear");
         printf ("\n Type your name:\n >> ");
-        fgets ( name, 50, stdin );
+        fgets ( name, 500, stdin );
 
         do
         {

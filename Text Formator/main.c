@@ -21,32 +21,35 @@ int main ()
         {
             do
             {
-                fflush(stdin);
+                fflush(stdin);  // Clean the buffer
                 system("Clear");
                 printf("\n Do you want to start the program?\n (1) Yes\n (2) No\n >> ");
                 scanf("%d", &opcao);
-            } while (opcao != 1 && opcao != 2);
+            } while (opcao != 1 && opcao != 2); // Prevent bugs
             aux1++;
-            if (opcao == 2)
-                return 0;
+            if (opcao == 2) // Allows the user to shutdown the program
+                break;
         }
 
+        fflush(stdin);
         system("Clear");
         printf ("\n Type your name:\n >> ");
-        fgets ( name, 50, stdin );  fgets ( name, 50, stdin );
+        fgets ( name, 50, stdin );
 
         do
         {
+            fflush(stdin);
             system("Clear");
             printf("\n Do you want to format the text?\n (1) Yes\n (2) No\n >> ");
             scanf("%d", &opcao1);
-            if (opcao1 == 1)
-            {
-                getting_uppercase ( name );
-                realocating_spaces ( name );
-                getting_lowercase ( name );
-            }
-        } while ( opcao1 != 1 && opcao1 != 2);
+        } while ( opcao1 != 1 && opcao1 != 2);  // Prevent bugs
+
+        if (opcao1 == 1)    // Format the text
+        {
+            getting_uppercase ( name );
+            realocating_spaces ( name );
+            getting_lowercase ( name );
+        }
 
         system("Clear");
         printf ("\n Your name is:\n%s\n\n", name);
@@ -54,16 +57,18 @@ int main ()
 
         do
         {
+            fflush(stdin);
             system("Clear");
             printf("\n Do you want to type another text?\n (1) Yes\n (2) No\n >> ");
             scanf("%d", &opcao2);
-            if (opcao2 == 2)
-                aux++;
-        } while ( opcao2 != 1 && opcao2 != 2 );
+        } while ( opcao2 != 1 && opcao2 != 2 ); // Prevent bugs
 
-    } while ( aux == 0 );
+        if (opcao2 == 2)    // Allows the user to shutdown the program
+            aux++;
 
-    return 1;
+    } while ( aux == 0 );   // Prevent bugs
+
+    return 1;   // The program has been closed at beginning
 }
 
 

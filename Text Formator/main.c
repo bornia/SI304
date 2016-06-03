@@ -48,7 +48,7 @@ int main ()
         {
             getting_uppercase ( name );
             realocating_spaces ( name );
-            getting_lowercase ( name );
+            getting_uppercase_1_letter ( name );
         }
 
         system("Clear");

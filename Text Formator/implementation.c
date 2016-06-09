@@ -27,7 +27,7 @@ void realocating_spaces ( char *name )
 	}
 }
 
-void getting_lowercase ( char *name )
+void getting_uppercase_1_letter ( char *name )
 {
     if ( islower ( name[0] ) != 0 )	// iF it is lowercase, returns a value different of zero
     name[0] = toupper ( name[0] );	// If all spaces were removed, the first position, definitly, is a letter.
